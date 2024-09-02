@@ -58,7 +58,7 @@ function addCow(evt) {
     $cow.style.top = `${evt.pageY}px`; // coordonnée y du clic
     
     const rotation = Math.random() * 360; //  rotation de l'image
-    $img.style.transform = `rotate(${rotation}deg)`;
+    $cow.style.transform = `rotate(${rotation}deg)`;
     
         // ajoute de l'image sur la page
     document.body.appendChild(cow);
