@@ -66,9 +66,9 @@ function addCow(evt) {
   
 function toggleCow(_evt) {
     if (document.onmousedown === addCow) {
-            document.onmousedown = null; // Désactive la fonction
+            document.onmousedown = null; // désactive le bouton vache
    } else {
-            document.onmousedown = addCow; // Active la fonction
+            document.onmousedown = addCow; // active le bouton vache
        }
     }
     
