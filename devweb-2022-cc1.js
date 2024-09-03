@@ -51,14 +51,14 @@ function addCow(evt) {
   console.debug(evt.x, evt.y);
   "use strict";
 
-    const $cow = document.createElement("cow");
-    $cow.src = "https://upload.wikimedia.org/wikipedia/commons/3/30/Cowicon.svg"; 
-    $cow.className = "cow"; // ajoute la classe "cow" pour le style
-    $cow.style.left = `${evt.pageX}px`; // coordonnée x du clic
-    $cow.style.top = `${evt.pageY}px`; // coordonnée y du clic
+    const img = document.createElement("img");
+    img.src = "https://upload.wikimedia.org/wikipedia/commons/3/30/Cowicon.svg"; 
+    img.className = "cow"; // ajoute la classe "cow" pour le style
+    img.style.left = `${evt.pageX}px`; // coordonnée x du clic
+    img.style.top = `${evt.pageY}px`; // coordonnée y du clic
     
     const rotation = Math.random() * 360; //  rotation de l'image
-    $cow.style.transform = `rotate(${rotation}deg)`;
+    img.style.transform = `rotate(${rotation}deg)`;
     
         // ajoute de l'image sur la page
     document.body.appendChild(cow);
