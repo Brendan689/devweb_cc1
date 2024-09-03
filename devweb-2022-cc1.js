@@ -51,7 +51,7 @@ function addCow(evt) {
   console.debug(evt.x, evt.y);
   "use strict";
 
-    const $cow = document.createElement("img");
+    const $cow = document.createElement("cow");
     $cow.src = "https://upload.wikimedia.org/wikipedia/commons/3/30/Cowicon.svg"; 
     $cow.className = "cow"; // ajoute la classe "cow" pour le style
     $cow.style.left = `${evt.pageX}px`; // coordonnée x du clic
